@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hitting The Pool From The High Dive" "
+title:  "Hitting The Pool From The High Dive"
 date:   2017-05-04 07:52:29 -0400
 ---
 
