@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Rock That Would Become a Gem.  "
-date:   2017-07-10 16:56:00 +0000
+date:   2017-07-10 12:56:00 -0400
 ---
 
 
