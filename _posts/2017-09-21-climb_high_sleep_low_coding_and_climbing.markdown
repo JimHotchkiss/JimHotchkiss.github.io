@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Climb High Sleep Low: Coding and Climbing"
-date:   2017-09-21 21:48:00 +0000
+date:   2017-09-21 17:48:01 -0400
 ---
 
 ![](https://i.imgur.com/M7gltRg.jpg)
