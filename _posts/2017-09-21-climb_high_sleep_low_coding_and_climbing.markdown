@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Climb High Sleep Low: Coding and Climbing"
-date:   2017-09-21 17:48:01 -0400
+title:      "Climb High Sleep Low: Coding and Climbing"
+date:       2017-09-21 17:48:01 -0400
+permalink:  climb_high_sleep_low_coding_and_climbing
 ---
 
 ![](https://i.imgur.com/M7gltRg.jpg)
@@ -14,8 +15,12 @@ Getting to Yosemite, from the Bay Area, wasn't at all easy, but so worth the eff
 
 Judy, one of our gracious hosts, began to tell a wonderful story about when she climbed Mt. Kilimanjaro.  It was told with dramatic description about the strains put on the body from the altitude.  She spoke, with detail that only someone who has experienced it could share, about the agony and pain of each step.  I gazed at her from across the dinner table, and wondered how I could iterate through nested hashes to pick out the values that were not integers.  I caught  myself in this day dream, and after admonishing myself for being a nerd, I re-engaged with the story.  I asked, 'how does a person prepare their body for that kind of altitude?'  Judy said that one thing they did was 'climb high and sleep low.'  This is where the climbers will climb during the day, letting their bodies feel the strain of the altitude, and then they climb back down to camp to sleep, allowing their bodies to recover.  The climbers will do this kind of 'leap frog,' to allow their bodies to acclimate to the altitude.  So, of course this story has me thinking about learing code. 
 
-I have now finished my Sinatra project, and I am more than half way through Rails.  It is tough.  The material, at times, seems disparate, and I find myself having to go back into my notes, or visit old labs, to remind myself how to do something.  Things that I think I should remember, at this point.  I recently finished refactoring with helpers and models.  This, for me, was a deep dive back into layouts and partials.  The notions are simple enough, but the execution of these concepts, especially when it involves several views, controllers and models, can leave me questioning my ability to become a skillful developer.  I really get down.  But you keep going, and trust that this is the 'pain' in growing-pains. 
+I have now finished my Sinatra project, and I am more than half way through Rails.  It is tough.  The material, at times, seems disparate, and I find myself having to go back into my notes, or visit old labs, to remind myself how to do something.  Things that I think I should know, at this point.  I recently finished refactoring with helpers and models.  This, for me, was a deep dive back into layouts and partials.  The notions are simple enough, but the execution of these concepts, especially when it involves several views, controllers and models, can leave me questioning my ability to become a skillful developer.  I really get down.  But you keep climbing, and trust that this is the 'pain' in growing-pains. 
 
-Several labs after learning about refactoring with helpers and models, we were asked to build, from a brainless file structure, a working application.  I don't recall if it was a blog or song app, but we needed to create migrations, wire up the models with the appropriate associations, stub out the action controllers, and build properly nested forms for our users to be able to instantiate different objects, all the while rendering the appropriate views. I remember the first time I limped through a nested forms lab, or the first deep dive we took into associations, and the feeling of frustration and uncertainty in my ability; I remember doing screen shares, to help clear up my confusion; I also remember feeling defeated and physically sore.  Much the way I felt with the layouts, partials and refactoring.  Yet, with this assignment, I breezed though much of it.  I found that groove, you know the one, where your talking outloud to yourself, and always two-steps ahead of yourself, anticipating what comes next; where you know the source of the bug before the error page has finished rendering.  And you really feel like you're 'getting it.'  That feels good.
+Like a climber acclimating to the increasing altitude,  the curriculum keeps you looping back from the edges of your ability.  Your understanding is pushed into harder territory, and then doubles back into areas you have more confidence with.  Then, once again, you are pushed to the boundries of your understanding. You notice that the material you are comfortable with continues to grow and grow.  You are breezing through things that you, just recently, were struggling to complete, and you really feel like you're getting it.  That feels good.  But then you are pushed, once again, into ideas that stretch your confidence thin.  
 
-Now, I've never climbed a mountain, but I am learning to code.  And I can tell you, the best way to learn code is to climb high and sleep low.  
+Now, I've never climbed a mountain, but I am learning to code.  And I can tell you, the best way to learn code is to climb high and sleep low
+
+
+
+ 
