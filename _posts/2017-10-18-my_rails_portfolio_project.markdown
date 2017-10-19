@@ -1,16 +1,10 @@
 ---
 layout: post
 title:      "My Rails Portfolio Project"
-date:       2017-10-18 15:15:08 +0000
+date:       2017-10-18 11:15:09 -0400
 permalink:  my_rails_portfolio_project
 ---
 
-
-
-
-<iframe src="https://giphy.com/embed/CDH0spsSaqQUg" width="900" height="192" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p>
-
-<br>
 
 > *Me, I can't usually get them 'cause my girlfriend's a vegetarian, which pretty much makes me a vegetarian. I do love the taste of a good burger.*                 <p>   - Jules Winfield
 
