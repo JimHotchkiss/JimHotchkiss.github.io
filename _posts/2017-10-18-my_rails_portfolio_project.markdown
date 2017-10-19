@@ -6,7 +6,7 @@ permalink:  my_rails_portfolio_project
 ---
 
 
-> *Me, I can't usually get them 'cause my girlfriend's a vegetarian, which pretty much makes me a vegetarian. I do love the taste of a good burger.*                 <p>   - Jules Winfield
+> *Me, I can't usually get them 'cause my girlfriend's a vegetarian, which pretty much makes me a vegetarian. I do love the taste of a good burger.*                   - Jules Winfield
 
 
 
