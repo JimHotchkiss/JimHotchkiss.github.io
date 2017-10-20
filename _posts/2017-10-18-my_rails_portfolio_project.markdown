@@ -14,7 +14,7 @@ permalink:  my_rails_portfolio_project
 
 Often my wife and are trying to decide on something to cook, and with her being a vegan, our choices seem to be inherently limited.  This made me consider building a recipe organizer app for vegans.  The functionality is straight forward enough.  A user can browse recipes,  search recipes by ingredients, contribute a recipe and leave a comment on a recipe.
 
-### Users and Authentication
+## Users and Authentication
 
 I started things by entering, rails new simply_vegan_app, in my terminal, and that Rails magic did not disappoint.  I started by getting the User up and running.  With `rails g resource User`, I stubbed out  the necessary migration, model, routes and controller for a user.  I built out the necessary user signup form, and controller action neseccary to instantiate a user.  I then moved on to authentication.  I utilized the gem 'bcrypt', with the macro `has_secure_password`.  This gave me acess to useful authentication methods, like `authenticate` and `password_confirmation`.  We were required to use Omniauth to login by a third-party provider, like Facebook, Twitter or Github.  Omniauth is gem that provides a secure way for you to authenticate a user.  Omniauth initiates a kind of 'hand-shake', where the the provider, Github, in this case, responds to a GET request by sending a token back to the browser.  The browser then sends the token back to the provider, proving they are who they say they are.  The provider then sends a hash of the user's data.  In order to correctly extract this data, we need to grab the hash, and put it in a variable.
 
@@ -37,7 +37,7 @@ def self.find_or_create_by_omniauth(auth_hash)
 
 Finally, we log the user in by using the SessionHelper method, `log_in`.  If not, we find our user, using our find_by method, and authenticate their password by using the authentication method. 
 
-### Associating Objects
+## Associating Objects
 
 But perhaps the crux of this project is the associations between objects.  In order to unlock the power of Activerecord, a builder needs to make sure the objects they are working with are appropriately wired up.  In this case, I had a recipe model.  Recipes have to have ingredients.  But ingredient is its own model.  So, what I'd like to do is to take a `recipe`object, and be able to ask it about its ingredients, like `recipe.ingredients`.  I want this to return to me an array of ingredients specific to that recipe.  We want the user to be able to provide the recipe's title, instructions for the recipe, but these are direct attributes of the recipe.  Additionally, we want to user to be able to select ingredients, already instantiated by other users, or provide their own.  However, an ingredient is an object.  We need to relate these two objects, recipe and ingredient, by using nested forms.   
 
@@ -81,7 +81,7 @@ def ingredients_attributes=(ingredient_attributes)
 
 Here, we are taking the user's input, interating over the array, assuring there is not blank input.  Then it will search ingredients, and either find or create that ingredient.  Then the ingredient object will be shoveled into our @recipe.ingredients array.  
 
-### Nested Resources
+## Nested Resources
 
 Another important feature of this app is for the user to be able to comment on a particular recipe.  This means that the user will navigate to a recipe url, `/recipes/recipe_id`, and then to create a new comment, `/comments/new` associated with that recipe.  In order to do this, we need to use nested resources.  
 
@@ -106,7 +106,7 @@ This created a method, called `:most_recent`, which uses the provided method of 
 ```
 
 
-### Final Thoughts
+## Final Thoughts
 
 I really enjoyed this process.  There were times of enormous frustration.  For instance, I had moved away from authentication, and was working on views and forms.  My signup, login and logout had been working perfectly, and just before a signed off for the day, a double checked all the app's functionality.  Nothing worked.  I kept getting an error regarding  CSRF token authenticity.  Login links were dead, or just breaking the code.  I Googled the question, and got many explenations and suggestions that I didn't understand.  I reached out to the Slack community, and was immediately pointed toward accessible resources.  In my attempt to use link_to for a delete button, I added some JavaScript.  This, I learned, caused me to loose my authentication token.  Then I came across the prettiest, little line a code, `<%= csrf_meta_tags %>`.  This, effectively, acts as a hidden field, but allows JavaScript easy access to the authentication token.  
 
