@@ -18,10 +18,10 @@ Often my wife and are trying to decide on something to cook, and with her being 
 
 I started things by entering, rails new simply_vegan_app, in my terminal, and that Rails magic did not disappoint.  I started by getting the User up and running.  With `rails g resource User`, I stubbed out  the necessary migration, model, routes and controller for a user.  I built out the necessary user signup form, and controller action neseccary to instantiate a user.  I then moved on to authentication.  I utilized the gem 'bcrypt', with the macro `has_secure_password`.  This gave me acess to useful authentication methods, like `authenticate` and `password_confirmation`.  We were required to use Omniauth to login by a third-party provider, like Facebook, Twitter or Github.  Omniauth is gem that provides a secure way for you to authenticate a user.  Omniauth initiates a kind of 'hand-shake', where the the provider, Github, in this case, responds to a GET request by sending a token back to the browser.  The browser then sends the token back to the provider, proving they are who they say they are.  The provider then sends a hash of the user's data.  In order to correctly extract this data, we need to grab the hash, and put it in a variable.
 
-We first setup an if-statement, to confirm whether the user authenticating from third party.  If so, we have access to our user's data, and set it to a variable.
+We first setup an if-statement, to confirm whether the user is authenticating from a third party.  If so, we have access to our user's data, and set it to a variable.
 
 ```
-auth_hash = request.env['omniauth.auth']
+if auth_hash = request.env['omniauth.auth']
 ```
 
 Once we have access to this data, we can build a method that searches our data base to either find or create a user.
