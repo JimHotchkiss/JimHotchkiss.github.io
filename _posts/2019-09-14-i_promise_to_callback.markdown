@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "I Promise() to CallBack()"
-date:       2019-09-14 19:40:15 +0000
+date:       2019-09-14 15:40:16 -0400
 permalink:  i_promise_to_callback
 ---
 
